@@ -50,7 +50,7 @@ const getWeather = async () => {
     const location = searchInput.value.trim() || 'egypt';
 
     try {
-        const response = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=e7a3f211406f412da2764621250707&q=${location}&days=3&aqi=no&alerts=no`);
+        const response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=e7a3f211406f412da2764621250707&q=${location}&days=3&aqi=no&alerts=no`);
         const data = await response.json();
 
         const forecast = data.forecast;
