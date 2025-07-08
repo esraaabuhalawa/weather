@@ -1,0 +1,76 @@
+:root {
+  --primary-color: #009AD8;
+  --bg-gray-900: #1E202B;
+  --bg-gray-800: #323544;
+  --bg-gray-700: #262936;
+  --text-color: #bfc1c8;
+}
+.breadcrumb-bg {
+  background-color: #262936;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+  content: var(--bs-breadcrumb-divider, "→");
+}
+.breadcrumb-item a,
+.breadcrumb-item {
+  color: #bfc1c8;
+  font-size: 13px;
+  text-decoration: none;
+}
+.breadcrumb-item a:hover {
+  text-decoration: underline;
+}
+.contact-info {
+  background-color: #262936;
+  border-radius: 15px;
+}
+.contact-info h2,
+.contact-info p,
+.contact-info a {
+  color: #bfc1c8;
+  font-size: 14px;
+  line-height: 1;
+}
+.contact-info img {
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+  width: 16px;
+}
+.map {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.map iframe {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.btn-info {
+  background-color: var(--primary-color);
+  padding: 8px 30px;
+  color:#fff;
+}
+
+.btn-info:hover {
+  border-color: var(--primary-color);
+  background-color: transparent;
+color:#fff;
+}
+.form-control:focus{
+    box-shadow: none;
+    border: 1px solid var(--primary-color);
+    background-color: transparent;
+}
+.form-control{
+    background-color: #1E202B;
+    border: 1px solid #333;
+    padding: 12px 10px;
+    border-radius: 25px;
+}
